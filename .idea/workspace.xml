@@ -15,10 +15,47 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/net/servokio/apo/main.java">
+        <entry file="file://$PROJECT_DIR$/src/net/servokio/apo/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="223">
-              <caret line="30" column="31" lean-forward="true" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
+            <state relative-caret-position="-100">
+              <caret line="75" column="131" selection-start-line="75" selection-start-column="131" selection-end-line="75" selection-end-column="131" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/net/servokio/apo/ProfileController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="714">
+              <caret line="42" column="126" selection-start-line="42" selection-start-column="126" selection-end-line="42" selection-end-column="126" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <marker date="1573297431533" expanded="true" signature="666:1149" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/net/servokio/apo/TrackController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-74">
+              <caret line="66" column="40" lean-forward="true" selection-start-line="66" selection-start-column="40" selection-end-line="66" selection-end-column="40" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/net/servokio/apo/App/Start.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="124">
+              <caret line="79" column="120" selection-start-line="79" selection-start-column="83" selection-end-line="79" selection-end-column="120" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -29,7 +66,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/net/servokio/apo/Utils/HTTPGet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
+            <state relative-caret-position="170">
               <caret line="10" column="32" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -90,7 +127,6 @@
         <option value="$PROJECT_DIR$/src/parents/sample.fxml" />
         <option value="$PROJECT_DIR$/src/parents/music.fxml" />
         <option value="$PROJECT_DIR$/src/net/servokio/apo/Utils/downloadYouTubeVideo.java" />
-        <option value="$PROJECT_DIR$/src/net/servokio/apo/ProfileController.java" />
         <option value="$PROJECT_DIR$/src/net/servokio/apo/App/Animations.java" />
         <option value="$PROJECT_DIR$/src/parents/track.fxml" />
         <option value="$PROJECT_DIR$/src/assets/css/style.css" />
@@ -100,11 +136,12 @@
         <option value="$PROJECT_DIR$/src/net/servokio/apo/TrackController.java" />
         <option value="$PROJECT_DIR$/src/net/servokio/apo/MusicController.java" />
         <option value="$PROJECT_DIR$/src/net/servokio/apo/TrackSeaController.java" />
-        <option value="$PROJECT_DIR$/src/net/servokio/apo/Controller.java" />
         <option value="$PROJECT_DIR$/src/net/servokio/apo/Utils/HTTPPost.java" />
-        <option value="$PROJECT_DIR$/src/net/servokio/apo/App/Start.java" />
         <option value="$PROJECT_DIR$/src/net/servokio/apo/Utils/HTTPGet.java" />
         <option value="$PROJECT_DIR$/src/net/servokio/apo/main.java" />
+        <option value="$PROJECT_DIR$/src/net/servokio/apo/App/Start.java" />
+        <option value="$PROJECT_DIR$/src/net/servokio/apo/ProfileController.java" />
+        <option value="$PROJECT_DIR$/src/net/servokio/apo/Controller.java" />
       </list>
     </option>
   </component>
@@ -140,6 +177,13 @@
             </path>
             <path>
               <item name="Apo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Apo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="apo" type="462c0819:PsiDirectoryNode" />
+              <item name="App" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Apo" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
@@ -151,7 +195,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Рабочий стол" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
@@ -231,7 +275,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.1309329" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.62356794" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -407,43 +451,12 @@
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/Desktop/React/servokio-site/src/pages/main/main-page.jsx" />
-    <entry file="file://$PROJECT_DIR$/src/net/servokio/apo/MusicController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6414">
-          <caret line="403" column="52" selection-start-line="403" selection-start-column="25" selection-end-line="403" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/net/servokio/apo/TrackSeaController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="583">
           <caret line="49" column="17" lean-forward="true" selection-start-line="49" selection-start-column="17" selection-end-line="49" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/net/servokio/apo/TrackController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-305">
-          <caret line="66" column="40" lean-forward="true" selection-start-line="66" selection-start-column="40" selection-end-line="66" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/net/servokio/apo/ProfileController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-216">
-          <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1560230590053" expanded="true" signature="666:1149" ph="..." />
           </folding>
         </state>
       </provider>
@@ -475,30 +488,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/net/servokio/apo/App/Start.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="66" column="39" selection-start-line="66" selection-start-column="39" selection-end-line="66" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/net/servokio/apo/Utils/HTTPPost.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/net/servokio/apo/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="75" column="28" selection-start-line="75" selection-start-column="28" selection-end-line="75" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -509,10 +502,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/net/servokio/apo/Utils/HTTPGet.java">
+    <entry file="file://$PROJECT_DIR$/src/net/servokio/apo/MusicController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="10" column="32" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="32" />
+        <state relative-caret-position="10">
+          <caret line="403" column="52" selection-start-line="403" selection-start-column="25" selection-end-line="403" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -521,8 +514,59 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/net/servokio/apo/main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="30" column="31" lean-forward="true" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
+        <state relative-caret-position="-499">
+          <caret line="30" column="85" selection-start-line="30" selection-start-column="79" selection-end-line="30" selection-end-column="85" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/servokio/apo/App/Start.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="79" column="120" selection-start-line="79" selection-start-column="83" selection-end-line="79" selection-end-column="120" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/servokio/apo/Utils/HTTPGet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="32" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/servokio/apo/ProfileController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="42" column="126" selection-start-line="42" selection-start-column="126" selection-end-line="42" selection-end-column="126" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1573297431533" expanded="true" signature="666:1149" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/servokio/apo/TrackController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-74">
+          <caret line="66" column="40" lean-forward="true" selection-start-line="66" selection-start-column="40" selection-end-line="66" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/servokio/apo/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-100">
+          <caret line="75" column="131" selection-start-line="75" selection-start-column="131" selection-end-line="75" selection-end-column="131" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

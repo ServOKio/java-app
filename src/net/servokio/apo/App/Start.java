@@ -64,7 +64,7 @@ public class Start {
         //Check update
         JSONObject updater = null;
         try {
-            updater = HTTPPost.PostReg("https://servokio.ru/api3/update","");
+            updater = HTTPPost.PostReg("https://"+main.stats.getString("domain")+"/api"+main.stats.getInt("api_last_version")+"/update","");
         } catch (Exception e) {
             e.printStackTrace();
             updater = new JSONObject("{\"statscode\":1,\"set_version\":'"+config.getString("version")+"'}");
@@ -77,9 +77,9 @@ public class Start {
 
         JSONObject jo = null;
         try {
-            jo = HTTPPost.PostReg("https://servokio.ru/api3/me","");
+            jo = HTTPPost.PostReg("https://"+main.stats.getString("domain")+"/api"+main.stats.getInt("api_last_version")+"/me","");
         } catch (Exception e) {
-            jo = new JSONObject("{\"statscode\":\"1\",\"user_name\":\"OfflineUser\",\"color\":\"5500ff\",\"avatar_url\":\"assets/img/default-background.png\",\"background_url\":\"assets/img/default-background.png\",\"background_filter\":0,\"ID\":0,\"token\":\"000000000000000\"}");
+            jo = new JSONObject("{\"statscode\":\"1\",\"username\":\"OfflineUser\",\"color\":\"#5500ff\",\"avatar_url\":\"assets/img/default-background.png\",\"background_url\":\"assets/img/default-background.png\",\"background_filter\":0,\"ID\":0,\"token\":\"000000000000000\"}");
             main.log("Enabled offline mode. JSON data: "+jo.toString());
             System.out.println(e.getMessage());
         }

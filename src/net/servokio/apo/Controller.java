@@ -73,7 +73,7 @@ public class Controller implements Initializable {
             String thq = i_fgcm.getText();
             JSONObject ob = null;
             try {
-                ob = HTTPPost.PostReg("https://servokio.ru/api2/recovery","username="+username+"&question_one="+oq+"&question_two="+twq+"&question_three="+thq);
+                ob = HTTPPost.PostReg("https://"+main.stats.getString("domain")+"/api"+main.stats.getInt("api_last_version")+"/auth","username="+username+"&question_one="+oq+"&question_two="+twq+"&question_three="+thq);
             } catch (Exception e){
                 e.printStackTrace();
             }

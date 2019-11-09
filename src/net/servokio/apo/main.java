@@ -22,12 +22,13 @@ public class main extends Application {
     private static final int W = 620;
     public static final Duration DURATION = Duration.seconds(0.5);
     public static JSONObject bg,stats;
-    public static Stage st,sc;
+    public static Stage st;
+    public static Scene sc;
     public static Parent profile,music;
     static {
         try {
             stats = HTTPGet.req("https://servokio.ru/stats");
-            bg = HTTPGet.req("https://servokio.ru/api2/asi");
+            bg = HTTPGet.req("https://"+stats.getString("domain")+"/api"+stats.getInt("api_last_version")+"/randomImage");
         } catch (Exception e) {
             bg = new JSONObject("{\"color\":\"5500ff\",\"img_url\":\"assets/img/default-background.png\",\"author\":\"ServOKio (Offline Mode)\"}");
             e.printStackTrace();

@@ -39,8 +39,8 @@ public class ProfileController implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        profile_banner.setStyle("-fx-background-color: #"+Start.color+"; -fx-background-image: url("+Start.background_url+"); -fx-background-size: cover;");
-        profile_avatar.setStyle("-fx-background-color: #"+Start.color+"; -fx-background-image: url(" + Start.avatar_url + "); -fx-background-size: cover;");
+        profile_banner.setStyle("-fx-background-color: "+Start.color+"; -fx-background-image: url(\""+Start.background_url+"\"); -fx-background-size: cover;");
+        profile_avatar.setStyle("-fx-background-color: "+Start.color+"; -fx-background-image: url(\"" + Start.avatar_url + "\"); -fx-background-size: cover;");
         profile_username.setText(Start.username);
     }
 
