@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="track_item" minHeight="54.0" prefHeight="50.0" prefWidth="250.0" style="-fx-background-color: transparent;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="net.servokio.apo.TrackController">
+   <children>
+      <AnchorPane id="track_back" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #101010;" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="2.0">
+         <children>
+            <Text fx:id="track_time" fill="#ababab" strokeType="OUTSIDE" strokeWidth="0.0" text="3:40" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="50.0" />
+            <ImageView fx:id="track_icon" fitHeight="40.0" fitWidth="40.0" layoutY="5.0" pickOnBounds="true" smooth="false" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="5.0" />
+            <TextField fx:id="track_name" editable="false" layoutX="45.0" layoutY="-4.0" prefHeight="25.0" prefWidth="79.0" promptText="Track name" style="-fx-background-color: transparent; -fx-text-fill: #e4e4e4; -fx-font-weight: 700; -fx-font-size: 16px;" AnchorPane.bottomAnchor="17.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="0.0" />
+            <AnchorPane layoutX="25.0" layoutY="45.0" prefHeight="3.0" prefWidth="200.0" styleClass="load" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="47.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="track_item" minHeight="54.0" prefHeight="50.0" prefWidth="250.0" style="-fx-background-color: transparent;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="net.servokio.apo.TrackSeaController">
+   <children>
+      <AnchorPane id="track_back" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #101010;" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="2.0">
+         <children>
+            <AnchorPane layoutX="25.0" layoutY="45.0" prefHeight="3.0" prefWidth="200.0" styleClass="load" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="47.0" />
+            <TextField fx:id="track_search" layoutX="-11.0" layoutY="24.0" prefHeight="40.0" prefWidth="192.0" promptText="What to look for ?" style="-fx-background-color: transparent; -fx-border-color: linear-gradient(to top right, #da43dc, #6782d0); -fx-text-fill: #dcdcdc; -fx-font-size: 18; -fx-font-weight: 700; -fx-font-family: SansSerif Regular;" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="53.0" AnchorPane.topAnchor="5.0">
+               <font>
+                  <Font name="SansSerif Regular" size="18.0" />
+               </font>
+            </TextField>
+            <AnchorPane layoutX="186.0" layoutY="6.0" onMouseClicked="#go_search_track" prefHeight="40.0" prefWidth="40.0" style="-fx-background-image: url(assets/img/download.png); -fx-background-size: 22 22; -fx-background-position: center center; -fx-background-repeat: stretch; -fx-border-color: white;" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

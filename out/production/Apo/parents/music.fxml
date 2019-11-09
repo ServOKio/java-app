@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="310.0" prefWidth="273.0" style="-fx-background-color: black;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="net.servokio.apo.MusicController">
+   <children>
+      <Text fill="WHITE" layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 700;" text="The first" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0">
+         <font>
+            <Font name="SansSerif Regular" size="30.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="14.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 700;" text="was music">
+         <font>
+            <Font name="SansSerif Regular" size="30.0" />
+         </font>
+      </Text>
+      <AnchorPane layoutY="215.0" prefHeight="50.0" prefWidth="273.0" style="-fx-background-color: #101010;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Text fx:id="curent_music_time" fill="#b7b7b7" layoutX="184.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="00:00:00" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="6.0">
+               <font>
+                  <Font name="SansSerif Regular" size="12.0" />
+               </font>
+            </Text>
+            <Slider fx:id="music_volume" layoutX="161.0" layoutY="26.0" majorTickUnit="0.1" max="1.0" minorTickCount="10" onMouseClicked="#setVolume" prefHeight="24.0" prefWidth="112.0" style="-fx-control-inner-background: #101010;" styleClass="votume_controll" stylesheets="assets/css/style.css" value="0.2" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+            <HBox layoutY="11.0" prefHeight="50.0" prefWidth="160.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <AnchorPane fx:id="pre_track_button" onMouseClicked="#pre_track" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #A173FF; -fx-background-image: url(assets/img/previous.png); -fx-background-size: 30 30; -fx-background-position: center center; -fx-background-repeat: stretch; -fx-background-radius: 50%;">
+                     <HBox.margin>
+                        <Insets left="1.5" right="1.5" />
+                     </HBox.margin>
+                  </AnchorPane>
+                  <AnchorPane fx:id="media_button" layoutX="12.0" layoutY="10.0" onMouseClicked="#pause_and_play" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #7F40FF; -fx-background-image: url(assets/img/play.png); -fx-background-size: 35 35; -fx-background-position: center center; -fx-background-repeat: stretch; -fx-background-radius: 50%;">
+                     <HBox.margin>
+                        <Insets left="1.5" right="1.5" />
+                     </HBox.margin>
+                  </AnchorPane>
+                  <AnchorPane fx:id="next_track_button" layoutX="92.0" layoutY="10.0" onMouseClicked="#next_track" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #5500FF; -fx-background-image: url(assets/img/next.png); -fx-background-size: 30 30; -fx-background-position: center center; -fx-background-repeat: stretch; -fx-background-radius: 50%;">
+                     <HBox.margin>
+                        <Insets left="1.5" right="1.5" />
+                     </HBox.margin>
+                  </AnchorPane>
+               </children>
+            </HBox>
+            <Slider fx:id="track_play" layoutX="167.0" layoutY="7.0" onMouseClicked="#set_play_track" prefHeight="14.0" prefWidth="112.0" style="-fx-control-inner-background: #101010; -fx-border-radius: 3px;" styleClass="playing_a_track" stylesheets="assets/css/style.css" AnchorPane.leftAnchor="161.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="173.0" layoutY="37.0" prefHeight="24.0" prefWidth="88.0" style="-fx-border-color: #50f; -fx-background-color: #50f; -fx-border-radius: 2px; -fx-border-width: 2;" AnchorPane.leftAnchor="173.0" AnchorPane.topAnchor="14.0">
+         <children>
+            <Text fill="WHITE" layoutX="17.0" layoutY="16.0" strokeWidth="0.0" style="-fx-font-weight: 700;" text="PLAY ALL">
+               <font>
+                  <Font name="SansSerif Regular" size="12.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="173.0" layoutY="45.0" onMouseClicked="#scan_tracks" prefHeight="24.0" prefWidth="88.0" style="-fx-border-color: #50f; -fx-border-radius: 2px; -fx-border-width: 2;" styleClass="scan_button" stylesheets="assets/css/style.css">
+         <children>
+            <Text fill="WHITE" layoutX="28.0" layoutY="16.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 700;" text="SCAN" />
+         </children>
+      </AnchorPane>
+      <ScrollPane id="track_list" fx:id="track_list" layoutX="37.0" layoutY="96.0" prefHeight="154.0" prefWidth="267.0" style="-fx-background-color: transparent; -fx-background: transparent;" styleClass="track_list" stylesheets="assets/css/style.css" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="96.0" />
+      <Text fx:id="curent_music_name" fill="#b7b7b7" layoutX="14.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select the music" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="75.0">
+         <font>
+            <Font name="SansSerif Regular" size="12.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
